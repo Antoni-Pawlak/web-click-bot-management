@@ -7,7 +7,7 @@
       "email": "john.smith@example.com",
       "status": "Invited",
       "role": "Sales Leader",
-      "last_login": "21 May, 2023 / 11:15 PM"
+      "updated_date": "21 May, 2023 / 11:15 PM"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "email": "sarah.johnson@example.com",
       "status": "Active",
       "role": "Admin",
-      "last_login": "18 May, 2023 / 03:30 PM"
+      "updated_date": "18 May, 2023 / 03:30 PM"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "email": "michael.anderson@example.com",
       "status": "Active",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 09:45 AM"
+      "updated_date": "19 May, 2023 / 09:45 AM"
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "email": "emily.davis@example.com",
       "status": "Invited",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 08:55 AM"
+      "updated_date": "19 May, 2023 / 08:55 AM"
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "email": "david.wilson@example.com",
       "status": "Active",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 11:00 AM"
+      "updated_date": "19 May, 2023 / 11:00 AM"
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "email": "jessica.lee@example.com",
       "status": "Active",
       "role": "Sales Rep",
-      "last_login": "18 May, 2023 / 04:45 PM"
+      "updated_date": "18 May, 2023 / 04:45 PM"
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "email": "andrew.brown@example.com",
       "status": "Invited",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 08:55 AM"
+      "updated_date": "19 May, 2023 / 08:55 AM"
     },
     {
       "id": 8,
@@ -70,7 +70,7 @@
       "email": "olivia.taylor@example.com",
       "status": "Active",
       "role": "Sales Leader",
-      "last_login": "19 May, 2023 / 08:20 AM"
+      "updated_date": "19 May, 2023 / 08:20 AM"
     },
     {
       "id": 9,
@@ -79,7 +79,7 @@
       "email": "william.martinez@example.com",
       "status": "Active",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 02:10 PM"
+      "updated_date": "19 May, 2023 / 02:10 PM"
     },
     {
       "id": 10,
@@ -88,7 +88,7 @@
       "email": "ava.thompson@example.com",
       "status": "Invited",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 08:55 AM"
+      "updated_date": "19 May, 2023 / 08:55 AM"
     },
     {
       "id": 11,
@@ -97,7 +97,7 @@
       "email": "ethan.wilson@example.com",
       "status": "Active",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 10:30 AM"
+      "updated_date": "19 May, 2023 / 10:30 AM"
     },
     {
       "id": 12,
@@ -106,7 +106,7 @@
       "email": "mia.rodriguez@example.com",
       "status": "Active",
       "role": "Sales Leader",
-      "last_login": "19 May, 2023 / 09:15 AM"
+      "updated_date": "19 May, 2023 / 09:15 AM"
     },
     {
       "id": 13,
@@ -115,7 +115,7 @@
       "email": "alexander.anderson@example.com",
       "status": "Active",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 03:50 PM"
+      "updated_date": "19 May, 2023 / 03:50 PM"
     },
     {
       "id": 14,
@@ -124,7 +124,7 @@
       "email": "sophia.garcia@example.com",
       "status": "Invited",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 08:55 AM"
+      "updated_date": "19 May, 2023 / 08:55 AM"
     },
     {
       "id": 15,
@@ -133,7 +133,7 @@
       "email": "james.clark@example.com",
       "status": "Active",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 11:25 AM"
+      "updated_date": "19 May, 2023 / 11:25 AM"
     },
     {
       "id": 16,
@@ -142,7 +142,7 @@
       "email": "charlotte.lewis@example.com",
       "status": "Active",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 08:55 AM"
+      "updated_date": "19 May, 2023 / 08:55 AM"
     },
     {
       "id": 17,
@@ -151,7 +151,7 @@
       "email": "benjamin.king@example.com",
       "status": "Invited",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 08:55 AM"
+      "updated_date": "19 May, 2023 / 08:55 AM"
     },
     {
       "id": 18,
@@ -160,7 +160,7 @@
       "email": "harper.martinez@example.com",
       "status": "Active",
       "role": "Sales Leader",
-      "last_login": "19 May, 2023 / 01:40 PM"
+      "updated_date": "19 May, 2023 / 01:40 PM"
     },
     {
       "id": 19,
@@ -169,7 +169,7 @@
       "email": "henry.brown@example.com",
       "status": "Active",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 09:05 AM"
+      "updated_date": "19 May, 2023 / 09:05 AM"
     },
     {
       "id": 20,
@@ -178,7 +178,7 @@
       "email": "amelia.thompson@example.com",
       "status": "Invited",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 08:55 AM"
+      "updated_date": "19 May, 2023 / 08:55 AM"
     },
     {
       "id": 21,
@@ -187,7 +187,7 @@
       "email": "daniel.davis@example.com",
       "status": "Active",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 11:55 AM"
+      "updated_date": "19 May, 2023 / 11:55 AM"
     },
     {
       "id": 22,
@@ -196,7 +196,7 @@
       "email": "madison.wilson@example.com",
       "status": "Active",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 08:35 AM"
+      "updated_date": "19 May, 2023 / 08:35 AM"
     },
     {
       "id": 23,
@@ -205,7 +205,7 @@
       "email": "samuel.lee@example.com",
       "status": "Invited",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 08:55 AM"
+      "updated_date": "19 May, 2023 / 08:55 AM"
     },
     {
       "id": 24,
@@ -214,7 +214,7 @@
       "email": "evelyn.taylor@example.com",
       "status": "Active",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 12:25 PM"
+      "updated_date": "19 May, 2023 / 12:25 PM"
     },
     {
       "id": 25,
@@ -223,7 +223,7 @@
       "email": "joseph.johnson@example.com",
       "status": "Active",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 09:55 AM"
+      "updated_date": "19 May, 2023 / 09:55 AM"
     },
     {
       "id": 26,
@@ -232,7 +232,7 @@
       "email": "mia.anderson@example.com",
       "status": "Active",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 09:55 AM"
+      "updated_date": "19 May, 2023 / 09:55 AM"
     },
     {
       "id": 27,
@@ -241,7 +241,7 @@
       "email": "samuel.clark@example.com",
       "status": "Invited",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 08:55 AM"
+      "updated_date": "19 May, 2023 / 08:55 AM"
     },
     {
       "id": 28,
@@ -250,7 +250,7 @@
       "email": "grace.martinez@example.com",
       "status": "Active",
       "role": "Sales Leader",
-      "last_login": "19 May, 2023 / 07:50 AM"
+      "updated_date": "19 May, 2023 / 07:50 AM"
     },
     {
       "id": 30,
@@ -259,7 +259,7 @@
       "email": "lily.davis@example.com",
       "status": "Active",
       "role": "Sales Rep",
-      "last_login": "19 May, 2023 / 09:35 AM"
+      "updated_date": "19 May, 2023 / 09:35 AM"
     },
     {
       "id": 31,
@@ -268,7 +268,7 @@
       "email": "yuvi@example.com",
       "status": "Active",
       "role": "Admin",
-      "last_login": "21 May, 2023 / 11:15 PM"
+      "updated_date": "21 May, 2023 / 11:15 PM"
     }
   ]
 }

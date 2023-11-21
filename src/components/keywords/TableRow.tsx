@@ -1,26 +1,23 @@
 import { RiDeleteBin6Line } from "react-icons/ri"
 import { FiEdit2 } from "react-icons/fi"
 
-import Badge from "../Badge"
 import Button from "../button/Button"
 
-import { toast } from 'react-hot-toast'
 
 interface TableRowProps{
     bgColor: string
-    id?: number
+    id?: string
     keyword?: string
-    img?: string
     link?: string
     amount?: string
-    last_login?: string
+    updated_date?: string
     onEdit: ()=> void
     onDelete: ()=> void
 }
 
-const TableRow:React.FC<TableRowProps> = ({bgColor, id, keyword, link, amount, last_login, onEdit, onDelete}) => {
-    const date = last_login?.split("/")[0]
-    const time = last_login?.split("/")[1]
+const TableRow:React.FC<TableRowProps> = ({bgColor, id, keyword, link, amount, updated_date, onEdit, onDelete}) => {
+    const date = updated_date?.split("/")[0]
+    const time = updated_date?.split("/")[1]
 
     
     return (

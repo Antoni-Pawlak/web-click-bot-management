@@ -1,8 +1,7 @@
 export interface Keyword{
-    id?: number
+    id?: string
     keyword: string
-    img?: string
     link: string
     amount: string
-    last_login?: string
+    updated_date?: string
 }

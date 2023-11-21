@@ -10,7 +10,7 @@ export const useAddKeyword = (keyword?: Keyword) => {
     return useMutation({
         mutationFn : async (newKeyword: Keyword) => {
             await axios.post(
-                `https://mock-backend-data-json-server.onrender.com/users`,
+                `http://localhost:8080/api/v1/keywords/`,
                 newKeyword
             )
         }
