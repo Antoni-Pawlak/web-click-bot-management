@@ -1,7 +1,7 @@
 import { MdOutlineAdd } from "react-icons/md"
 import { BsCloudDownload } from "react-icons/bs"
 import { TbArrowsSort } from "react-icons/tb"
-import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io"
+import { IoMdArrowBack, IoMdArrowForward, IoLogoPlaystation } from "react-icons/io"
 
 import TableRow from "./TableRow";
 import { Keyword } from "../../interfaces/Keyword"
@@ -15,6 +15,7 @@ import Button from "../button/Button";
 import { toast } from "react-hot-toast";
 import { useGetKeywords } from "../../hooks/useGetKeywords";
 import { useGetTotalKeyword } from "../../hooks/useGetTotalKeyword"
+import { useStartBot } from "../../hooks/useStartBot"
 
 const KeywordTable = () => {
 
@@ -27,6 +28,7 @@ const KeywordTable = () => {
     const [deleteModalOpen, setDeleteModalOpen] = useState(false);
     const { data: paginatedData, refetch, isLoading } = useGetKeywords(query)
     const { data: total, refetch: getTotalRefetch } = useGetTotalKeyword()
+    const startBot = useStartBot();
 
     // const [isLoading, setIsLoading] = useState(true)
 
@@ -76,6 +78,10 @@ const KeywordTable = () => {
                 closeModal={() => setEditModalOpen(false)} />
 
             <div className="container mx-auto px-4 sm:px-8">
+                <div>
+                <Button text="Start Bot" icon={IoLogoPlaystation} classes="gap-2 items-center px-4 justify-center flex flex-row  text-white bg-blue-600 rounded-lg font-semibold hover:bg-blue-400 p-2 "
+                                        onClick={() => { startBot() }} />
+                </div>
                 <div className="py-8">
                     <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
                         <div className="inline-block shadow-[0_3px_10px_rgb(0,0,0,0.2)] shadow-indigo-500/40 min-w-full rounded-lg overflow-hidden">

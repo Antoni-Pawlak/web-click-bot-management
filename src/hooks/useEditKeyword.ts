@@ -10,7 +10,7 @@ export const useEditKeyword = (keyword?: Keyword) => {
     return useMutation({
         mutationFn : async (newKeyword: Keyword) => {
             await axios.post(
-                `http://localhost:8080/api/v1/keywords/${newKeyword.id}`,
+                `http://localhost:8080/api/v1/keywords/${newKeyword._id}`,
                 newKeyword
             )
         }

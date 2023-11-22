@@ -1,5 +1,5 @@
 export interface Keyword{
-    id?: string
+    _id?: string
     keyword: string
     link: string
     amount: string

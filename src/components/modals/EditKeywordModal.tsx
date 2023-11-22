@@ -43,7 +43,7 @@ const EditKeywordModal: React.FC<EditKeywordModalProps> = ({ keyword, isOpen, ti
     const editKeyword = () => {
 
         const updatedKeyword: Keyword = {
-            id: keyword?.id,
+            _id: keyword?._id,
             keyword: (document.getElementById('keyword') as HTMLInputElement).value,
             link: (document.getElementById('link') as HTMLInputElement).value,
             amount: (document.getElementById("amount") as HTMLSelectElement).value,

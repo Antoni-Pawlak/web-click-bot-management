@@ -17,9 +17,9 @@ interface DeleteModalProps{
 
 const DeleteModal:React.FC<DeleteModalProps> = ({keyword, isOpen, closeModal, onConfimation}) =>{
 
-    const { mutate, isSuccess, isError } = useDeleteKeyword(keyword?.id)
+    const { mutate, isSuccess, isError } = useDeleteKeyword(keyword?._id)
 
-    const deleteKeyword = (id?:number) =>{
+    const deleteKeyword = (_id?: string) =>{
         mutate()
     }
 
@@ -33,7 +33,7 @@ const DeleteModal:React.FC<DeleteModalProps> = ({keyword, isOpen, closeModal, on
     
 
     const handleConfirmation = () => {
-        deleteKeyword(keyword?.id)
+        deleteKeyword(keyword?._id)
         closeModal()
     }
     

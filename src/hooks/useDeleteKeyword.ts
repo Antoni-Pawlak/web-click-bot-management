@@ -5,11 +5,11 @@ import axios from 'axios'
 
 const url = import.meta.env.VITE_REACT_APP_BACKEND_URL
 
-export const useDeleteKeyword = (postId?: number) => {
+export const useDeleteKeyword = (KeywordId?: string) => {
     return useMutation({
         mutationFn : async () => {
             await axios.delete(
-                `https://mock-backend-data-json-server.onrender.com/users/${postId}`
+                `http://localhost:8080/api/v1/keywords/${KeywordId}`
             )
         }
     })
