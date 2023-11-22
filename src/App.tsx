@@ -1,17 +1,24 @@
-
-import './App.css'
-import KeywordTable from './components/keywords/KeywordTable'
-import { IoLogoPlaystation } from "react-icons/io"
-
+import './App.css';
+import KeywordTable from './components/keywords/KeywordTable';
+import { IoLogoPlaystation } from "react-icons/io";
 import { Toaster } from "react-hot-toast";
-import { useStartBot } from "./hooks/useStartBot"
 import Button from "./components/button/Button";
+import axios from 'axios';
 
 function App() {
-  const startBot = useStartBot();
+  const handleClick = async () => {
+    try {
+      const response = await axios.get(`http://localhost:8080/api/v1/keywords/startbot`);
+      console.log(response.data); // log the data from the response
+    } catch (error) {
+      console.error(error); // log any errors
+    }
+  };
+
+
   return (
     <>
-      <Toaster position='bottom-center'/>
+      <Toaster position='bottom-center' />
       <div className='max-w-screen-xl mx-auto p-5'>
         <div className='text-3xl mx-auto px-8 py-4 font-semibold'>
           Bot Settings
@@ -20,16 +27,17 @@ function App() {
           </div>
         </div>
         <div>
-                <Button text="Start Bot" icon={IoLogoPlaystation} classes="gap-2 items-center px-4 justify-center flex flex-row  text-white bg-blue-600 rounded-lg font-semibold hover:bg-blue-400 p-2 "
-                                        onClick={() => startBot() } />
-                </div>
+          <Button text="Start Bot" icon={IoLogoPlaystation} classes="gap-2 items-center px-4 justify-center flex flex-row  text-white bg-blue-600 rounded-lg font-semibold hover:bg-blue-400 p-2 "
+            onClick={handleClick} /> {/* pass startBot function directly */}
+        </div>
+
         {/* tabs component */}
 
         {/* Keyword table */}
         <KeywordTable />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
