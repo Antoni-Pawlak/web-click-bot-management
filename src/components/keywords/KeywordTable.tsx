@@ -1,7 +1,7 @@
 import { MdOutlineAdd } from "react-icons/md"
 import { BsCloudDownload } from "react-icons/bs"
 import { TbArrowsSort } from "react-icons/tb"
-import { IoMdArrowBack, IoMdArrowForward, IoLogoPlaystation } from "react-icons/io"
+import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io"
 
 import TableRow from "./TableRow";
 import { Keyword } from "../../interfaces/Keyword"
@@ -12,7 +12,6 @@ import { useState, useEffect } from "react"
 import DeleteModal from "../modals/DeleteModal";
 import EditKeywordModal from "../modals/EditKeywordModal";
 import Button from "../button/Button";
-import { toast } from "react-hot-toast";
 import { useGetKeywords } from "../../hooks/useGetKeywords";
 import { useGetTotalKeyword } from "../../hooks/useGetTotalKeyword"
 
@@ -39,6 +38,11 @@ const KeywordTable = () => {
         }, 500);
     }, [query, editModalOpen, deleteModalOpen])
 
+    useEffect(() =>{
+        setInterval(() => {
+            refetch()
+        }, 5000)
+    }, [])
     useEffect(() => {
         setTimeout(() => {
             toggleOrder(sort, pageNo)
@@ -165,7 +169,7 @@ const KeywordTable = () => {
                                     {paginatedData &&
                                         <tbody>
                                             {paginatedData.map((keyword, index) => (
-                                                <TableRow key={index} bgColor={index % 2 === 0 ? "bg-transparent" : "bg-slate-50"} id={keyword?.id} keyword={keyword.keyword} link={keyword.link} amount={keyword.amount} updated_date={keyword.updated_date}
+                                                <TableRow key={index} bgColor={index % 2 === 0 ? "bg-transparent" : "bg-slate-50"} id={keyword?._id} keyword={keyword.keyword} link={keyword.link} amount={keyword.amount} clicked_amount={keyword.clicked_amount} updated_date={keyword.updated_date}
                                                     onDelete={() => { setKeyword(keyword); setDeleteModalOpen(true); }} onEdit={() => { setKeyword(keyword); setEditModalOpen(true) }} />
                                             ))}
                                         </tbody>

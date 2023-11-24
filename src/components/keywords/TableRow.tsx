@@ -6,16 +6,17 @@ import Button from "../button/Button"
 
 interface TableRowProps{
     bgColor: string
-    id?: string
+    _id?: string
     keyword?: string
     link?: string
     amount?: string
+    clicked_amount?: string
     updated_date?: string
     onEdit: ()=> void
     onDelete: ()=> void
 }
 
-const TableRow:React.FC<TableRowProps> = ({bgColor, id, keyword, link, amount, updated_date, onEdit, onDelete}) => {
+const TableRow:React.FC<TableRowProps> = ({bgColor, _id, keyword, link, amount, clicked_amount, updated_date, onEdit, onDelete}) => {
     const date = updated_date?.split("/")[0]
     const time = updated_date?.split("/")[1]
 
@@ -37,7 +38,7 @@ const TableRow:React.FC<TableRowProps> = ({bgColor, id, keyword, link, amount, u
                 </p>
             </td>
             <td className="px-5 py-5 border-b border-gray-200 bg-transparent text-sm">
-                <p className="text-gray-400 font-medium whitespace-no-wrap">{amount}</p>
+                <p className="text-gray-400 font-medium whitespace-no-wrap">{clicked_amount} / {amount}</p>
             </td>
             <td className="px-5 py-5 border-b border-gray-200 bg-transparent text-sm">
                 <p className="text-gray-900 font-[430] whitespace-no-wrap">{date}</p>
